@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 2203bda82abb51240898b3fa83bfa5ad
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: robot alehda_0
+    21300002: robot alehda_1
+    21300004: robot alehda_2
+    21300006: robot alehda_3
+    21300008: robot alehda_4
+    21300010: robot alehda_5
+    21300012: robot alehda_6
+    21300014: robot alehda_7
+    21300016: robot alehda_8
+    21300018: robot alehda_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: robot alehda_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4746
+        width: 501
+        height: 620
+      alignment: 9
+      pivot: {x: .429306328, y: .834972739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_1
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 5045
+        width: 327
+        height: 623
+      alignment: 9
+      pivot: {x: .533974349, y: .821669996}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_2
+      rect:
+        serializedVersion: 2
+        x: 3159
+        y: 5128
+        width: 161
+        height: 343
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_3
+      rect:
+        serializedVersion: 2
+        x: 3951
+        y: 4907
+        width: 559
+        height: 636
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_4
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 3850
+        width: 371
+        height: 741
+      alignment: 9
+      pivot: {x: .544919252, y: .88755101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1924
+        width: 368
+        height: 808
+      alignment: 9
+      pivot: {x: .474684149, y: .792460203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_6
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 2150
+        width: 432
+        height: 864
+      alignment: 9
+      pivot: {x: .562835693, y: .811674893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_7
+      rect:
+        serializedVersion: 2
+        x: 4006
+        y: 2588
+        width: 640
+        height: 1096
+      alignment: 9
+      pivot: {x: .310764313, y: .170004517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_8
+      rect:
+        serializedVersion: 2
+        x: 4078
+        y: 1215
+        width: 360
+        height: 725
+      alignment: 9
+      pivot: {x: .448243558, y: .794400275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: robot alehda_9
+      rect:
+        serializedVersion: 2
+        x: 4045
+        y: 0
+        width: 504
+        height: 617
+      alignment: 9
+      pivot: {x: .484384686, y: .789523602}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
