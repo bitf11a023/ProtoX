@@ -56,8 +56,8 @@ public class PlatformSpawner : MonoBehaviour {
 
 	void Breakroof()
 	{
-		if (ScoreCal.score > 340f) {
-			GameObject o = ground[ground.Count-4];
+		if (ScoreCal.score > 450f) {
+			GameObject o = ground[ground.Count-3];
 			GameObject obj1=null;
 			foreach(Transform a in o.transform)
 			{

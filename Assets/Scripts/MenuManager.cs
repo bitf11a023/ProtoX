@@ -22,7 +22,7 @@ public class MenuManager : MonoBehaviour {
 	}
 
 	void Update () {
-		if (t1.senseTouch () == "SingleTap") {
+		if (t1.senseTouch () == "Tap") {
 			RaycastHit2D hit = t1.GetHitObject();
 			if(hit.collider.gameObject.transform.name == "Play_button")
 			{

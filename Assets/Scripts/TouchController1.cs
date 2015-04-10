@@ -7,8 +7,7 @@ public class TouchController1 : MonoBehaviour {
 	private Vector2 v2previous;
 	private Vector2 v2current;
 	private float fTouchDelta;
-	int minSwipeLength = 10;
-	int maxSwipeLength = 30;
+	int minSwipeLenght = 12;
 	RaycastHit2D hit;
 //
 //	void Awake()
@@ -71,22 +70,24 @@ public class TouchController1 : MonoBehaviour {
 		if(Input.touchCount == 1){
 			if(Input.GetTouch(0).phase == TouchPhase.Began){
 				v2previous = Input.GetTouch(0).position;
+				Vector2 startPoint = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+				hit = Physics2D.Raycast(startPoint,Vector2.zero);
+				if(hit.collider != null && hit.transform != null){
+					//							Debug.Log(hit.transform.name);
+					touchstatus="Tap";
+				}
 			}
 			if(Input.GetTouch(0).phase == TouchPhase.Moved){
 				v2current = Input.GetTouch(0).position;
 				fTouchDelta = v2current.magnitude - v2previous.magnitude;
 				
-				if(Mathf.Abs(fTouchDelta) > minSwipeLength){
+				if(Mathf.Abs(fTouchDelta) > minSwipeLenght){
 					Debug.Log("Swipe");
 					if(fTouchDelta>0){
 //						Objecttomove[1].transform.position = new Vector2(Objecttomove[1].transform.position.x,Objecttomove[1].transform.position.y+1);
 //						Debug.Log("Left and Bottom");
 						touchstatus="SwipeUp";
 					}
-//					else if(fTouchDelta >= maxSwipeLength )
-//					{
-//						touchstatus = "LongJump";
-//				}
 					else{
 //						Objecttomove[1].transform.position = new Vector2(Objecttomove[1].transform.position.x,Objecttomove[1].transform.position.y-1);
 //						Debug.Log("Right and Top");

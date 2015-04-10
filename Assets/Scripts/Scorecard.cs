@@ -14,7 +14,7 @@ public class Scorecard : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (t1.senseTouch () == "SingleTap") {
+		if (t1.senseTouch () == "Tap") {
 			RaycastHit2D hit = t1.GetHitObject();
 			if(hit.collider.gameObject.transform.name == "Scorecard_Menu_button")
 			{

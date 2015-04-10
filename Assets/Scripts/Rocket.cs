@@ -6,11 +6,11 @@ public class Rocket : MonoBehaviour
 	public GameObject explosion;		// Prefab of explosion effect.
 //
 //
-//	void Start () 
-//	{
+	void Start () 
+	{
 //		// Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
-//		Destroy(gameObject, 2);
-//	}
+		Destroy(gameObject, 7f);
+}
 //
 
 	void OnExplode()
@@ -32,12 +32,7 @@ public class Rocket : MonoBehaviour
 			Destroy (gameObject);
 			col.gameObject.GetComponent<PlatformerCharacter2D>().EndGame();
 		}
-		if(col.tag == "hurdles")
-		{
-			//col.gameObject.GetComponent<PlatformerCharacter2D>().EndGame();
-			OnExplode ();
-			Destroy (gameObject);
-		}
+
 		// If it hits an enemy...
 //		if(col.tag == "Enemy")
 //		{
