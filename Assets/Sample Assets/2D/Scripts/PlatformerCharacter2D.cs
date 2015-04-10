@@ -116,12 +116,12 @@
 
 						// If the player should jump...
 						//if ((grounded || !doubleJumps) && jump) {
-		if (grounded && jump) {
+		if (  jump) {
 			// Add a vertical force to the player.
 			//anim.SetBool("Ground", false);
-			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
+			//rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, rigidbody2D.velocity.y);
 			if(jumpForce <= MaxjumpForce)
-			rigidbody2D.AddForce(new Vector2(0f, jumpForce+40 *Time.deltaTime));
+			rigidbody2D.AddForce(new Vector2(0f, jumpForce+50f));
 			//doubleJumpUsed = true;
 		}
 //			    if (grounded && longJump) {

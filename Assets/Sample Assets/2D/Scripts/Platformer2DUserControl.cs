@@ -32,7 +32,7 @@
 //				LongJump = true;
 			if (touch == "SwipeDown") c = true;
 			if(Input.GetKey(KeyCode.X)) c = true;
-			if (Input.GetButtonDown("Jump")) jump = true;
+			if (Input.GetButton("Jump")) jump = true;
 	#endif
 
 	    }
