@@ -17,7 +17,7 @@ public class PlatformSpawner : MonoBehaviour {
 //		spawnTime = spawnTime / maxspeed;
 		StartCoroutine("Spawn");
 		finalpos = b.position.x - a.position.x;
-		Invoke("Destroyer", 4.7f);
+		Invoke("Destroyer", 8f);
 	}
 
 	void Update()

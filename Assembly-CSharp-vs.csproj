@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\SpawnerScript1.cs" />
      <Compile Include="Assets\Scripts\TouchController.cs" />
      <Compile Include="Assets\Scripts\TouchController1.cs" />
+     <Compile Include="Assets\motion.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\LeaderBoard.xml" />
      <None Include="Assets\Resources\LeaderBoard.xml" />
