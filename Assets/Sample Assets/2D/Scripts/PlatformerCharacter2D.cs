@@ -22,9 +22,11 @@
 				float ceilingRadius = .01f;							// Radius of the overlap circle to determine if the player can stand up
 				Animator anim;										// Reference to the player's animator component.
 				public GameObject robot_explosion;
-		public GameObject robot_slide;
-				bool doubleJumps = false;
-
+				public GameObject robot_slide;
+				//bool doubleJumps = false;
+				public float maxFuel = 100f;
+				float currentFuel;
+				public float dFuel = 10f;
 				ScoreCal s = new ScoreCal();
 				public static int PowerUpCount;
 				LeaderBoardScript lb = new LeaderBoardScript();
@@ -46,6 +48,7 @@
 
 				void Start()
 				{
+					currentFuel = maxFuel;
 					Scorecard = GameObject.Find("Scorecard");
 					PowerUpCount = 0;
 					sp = GameObject.FindGameObjectsWithTag("Spawner");
@@ -97,7 +100,7 @@
 							if (grounded || airControl) {
 									// Reduce the speed if crouching by the crouchSpeed multiplier
 									move = (crouch ? move * crouchSpeed : move);
-
+			currentFuel = 100;
 									// The Speed animator parameter is set to the absolute value of the horizontal input.
 									anim.SetFloat ("Speed", Mathf.Abs (move));
 
@@ -116,16 +119,20 @@
 
 							// If the player should jump...
 							//if ((grounded || !doubleJumps) && jump) {
-			if (jump) {
+			if (jump && currentFuel > 0.0f) {
 						// Add a vertical force to the player.
 						//anim.SetBool("Ground", false);
+						currentFuel = currentFuel - 
+				dFuel ;
 						anim.SetBool ("Jump", jump);
 						rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
 						//if(jumpForce <= MaxjumpForce)
 						rigidbody2D.AddForce (new Vector2 (0f, jumpForce));
 						//doubleJumpUsed = true;
+			Debug.Log(currentFuel);
 				} else {
 						anim.SetBool ("Jump", jump);
+
 			}
 	//			    if (grounded && longJump) {
 	//			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
