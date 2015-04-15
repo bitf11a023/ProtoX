@@ -90,7 +90,7 @@
 			if (crouch) {
 						
 				var slide = Instantiate (robot_slide, transform.position  , transform.rotation);
-					Destroy (slide,2f);
+					Destroy (slide,0.5f);
 			}
 					anim.SetBool ("Crouch", crouch);
 
@@ -195,7 +195,7 @@
 					s.Setincrement(0);
 					if (robot_explosion) {
 									var explosion = Instantiate (robot_explosion, transform.position, transform.rotation);
-									Destroy (explosion,1f);
+									Destroy (explosion,1.0f);
 							}
 					anim.SetBool("Destroy",true);
 					Scorecard.SetActive(true);
