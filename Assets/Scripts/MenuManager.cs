@@ -46,7 +46,7 @@ public class MenuManager : MonoBehaviour {
 		int i = 1;
 		foreach (int s in scoreList) {
 			Score[i].text = s.ToString();
-			Debug.Log (s);
+			//Debug.Log (s);
 			i++;
 		}
 	}
